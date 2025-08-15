@@ -1,0 +1,27 @@
+package br.com.grocha.Literatura.modelo;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import java.util.List;
+
+public class GutendexBook {
+
+    private String title;
+    private List<GutendexAuthor> authors;
+    private List<String> languages;
+
+    @JsonProperty("download_count")
+    private Integer download_count;
+
+    public String getTitle() { return title; }
+    public void setTitle(String title) { this.title = title; }
+
+    public List<GutendexAuthor> getAuthors() { return authors; }
+    public void setAuthors(List<GutendexAuthor> authors) { this.authors = authors; }
+
+    public List<String> getLanguages() { return languages; }
+    public void setLanguages(List<String> languages) { this.languages = languages; }
+
+    public Integer getDownloadCount() { return download_count; }
+    public void setDownloadCount(Integer download_count) { this.download_count = download_count; }
+}
