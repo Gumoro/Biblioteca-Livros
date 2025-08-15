@@ -93,6 +93,6 @@ public class LivroServico {
     }
 
     public List<Livro> listarLivrosPorIdioma(String idioma) {
-        return livroRepositorio.findByIdioma(idioma.toUpperCase());
+        return livroRepositorio.findByIdiomaIgnoreCase(idioma);
     }
 }
